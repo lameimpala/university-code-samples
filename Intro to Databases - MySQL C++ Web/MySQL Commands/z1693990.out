@@ -1,0 +1,106 @@
+mysql> source ./z1693990.sql
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.05 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.17 sec)
+
+Query OK, 1 row affected (0.02 sec)
+
+Query OK, 1 row affected (0.02 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.02 sec)
+
+Query OK, 1 row affected (0.05 sec)
+
++--------+----------------+--------+
+| dog_id | breed          | name   |
++--------+----------------+--------+
+|      1 | german shepard | sandy  |
+|      2 | poodle         | daisy  |
+|      3 | daschund       | dino   |
+|      4 | saint bernard  | smokey |
+|      5 | labrador       | moxi   |
++--------+----------------+--------+
+5 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.11 sec)
+
+Query OK, 1 row affected (0.02 sec)
+
+Query OK, 1 row affected (0.02 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.02 sec)
+
+Query OK, 1 row affected (0.02 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.02 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
++----------+--------+------------+
+| visit_id | dog_id | visit_date |
++----------+--------+------------+
+|        1 |      1 | 2016-03-11 |
+|        2 |      2 | 2016-03-11 |
+|        3 |      3 | 2016-03-11 |
+|        4 |      4 | 2016-03-11 |
+|        5 |      5 | 2016-03-11 |
+|        6 |      3 | 2015-01-23 |
+|        7 |      2 | 2015-03-01 |
+|        8 |      1 | 2016-02-01 |
++----------+--------+------------+
+8 rows in set (0.00 sec)
+
+Query OK, 8 rows affected (0.19 sec)
+Records: 8  Duplicates: 0  Warnings: 0
+
+Query OK, 1 row affected (0.03 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
++----------+--------+------------+---------+
+| visit_id | dog_id | visit_date | weekday |
++----------+--------+------------+---------+
+|        1 |      1 | 2016-03-11 | NULL    |
+|        2 |      2 | 2016-03-11 | NULL    |
+|        3 |      3 | 2016-03-11 | NULL    |
+|        4 |      4 | 2016-03-11 | NULL    |
+|        5 |      5 | 2016-03-11 | NULL    |
+|        6 |      3 | 2015-01-23 | NULL    |
+|        7 |      2 | 2015-03-01 | NULL    |
+|        8 |      1 | 2016-02-01 | NULL    |
+|        9 |      1 | 2016-02-01 | 2       |
+|       10 |      5 | 2016-02-08 | 2       |
+|       11 |      3 | 2016-03-09 | 4       |
++----------+--------+------------+---------+
+11 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
++--------+--------+
+| Dogs   | Visits |
++--------+--------+
+| sandy  |      3 |
+| daisy  |      2 |
+| dino   |      3 |
+| smokey |      1 |
+| moxi   |      2 |
++--------+--------+
+5 rows in set (0.00 sec)
+
+mysql> exit
